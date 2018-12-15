@@ -1,3 +1,7 @@
+"""
+端口扫描器
+"""
+
 import optparse
 from socket import *
 from threading import Thread, Semaphore
