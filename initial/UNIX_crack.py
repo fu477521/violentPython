@@ -36,6 +36,5 @@ def main():
 			result = testPass(cryptPass)
 
 
-
 if __name__ == '__main__':
 	main()
