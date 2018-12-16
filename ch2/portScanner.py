@@ -55,3 +55,7 @@ def main():
         print("[-] You must specify a target host and port[s].")
         exit(0)
     portScan(tgtHost, tgtPorts)
+
+
+if __name__ == "__main__":
+    main()

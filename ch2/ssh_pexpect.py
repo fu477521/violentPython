@@ -1,3 +1,9 @@
+"""
+使用第三方pexpect模块，与SSH 进行交互。
+pip install pexpect。
+"""
+
+
 import pexpect
 
 PROMPT = ['# ', '>>>', '>', ', ', '\$ ']
@@ -26,11 +32,12 @@ def connect(user, host, password):
         return child
 
 def main():
-    host = 'localhost'
-    user = 'root'
-    password = 'toor'
+    host = ''
+    user = 'ubuntu'
+    password = ''
     child = connect(user, host, password)
-    send_command(child, 'cat /etc/shadow | grep root')
+    send_command(child, 'sudo cat /etc/shadow | grep root')
+    # print('hahaha')
 
 
 if __name__ == "__main__":
